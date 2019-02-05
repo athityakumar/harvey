@@ -3,7 +3,7 @@ from models.case import Case
 from models.legal_knowledge_graph import LegalKnowledgeGraph
 from helpers import *
 
-G = init_graph('case-case-citation.txt')
+G = init_graph('datafiles/case-case-citation.txt')
 
 print(len(G.nodes()))
 print(len(G.edges()))
