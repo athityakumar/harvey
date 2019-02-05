@@ -14,8 +14,8 @@ def get_dist_from_deg(degree):
 
 with open('case-case-citation.txt') as f:
     for line in f.readlines():
-        if i>MAX_LIMIT:
-            break
+        # if i>MAX_LIMIT:
+        #     break
 
         cited_by, cited_to = line.rstrip().split("-->")
         cited_by_uuid = cited_by.split("(")[-1].split(")")[0]
@@ -37,29 +37,6 @@ import collections
 import matplotlib.pyplot as plt
 import networkx as nx
 
-degree_sequence = sorted([d for n, d in G.out_degree()], reverse=True)  # degree sequence
-# print "Degree sequence", degree_sequence
-degreeCount = collections.Counter(degree_sequence)
-deg, cnt = zip(*degreeCount.items())
-
-fig, ax = plt.subplots()
-plt.bar(deg, cnt, width=0.80, color='b')
-
-plt.title("In-Degree Histogram")
-plt.ylabel("Count")
-plt.xlabel("In-Degree")
-ax.set_xticks([d + 0.4 for d in deg])
-ax.set_xticklabels(deg)
-
-# # draw graph in inset
-# plt.axes([0.4, 0.4, 0.5, 0.5])
-# Gcc = sorted(nx.connected_component_subgraphs(G), key=len, reverse=True)[0]
-# pos = nx.spring_layout(G)
-# plt.axis('off')
-# nx.draw_networkx_nodes(G, pos, node_size=20)
-# nx.draw_networkx_edges(G, pos, alpha=0.4)
-
-
 sum_in_degree = 0
 for (deg, count) in get_dist_from_deg(G.in_degree()):
     sum_in_degree += deg*count
@@ -70,4 +47,34 @@ for (deg, count) in get_dist_from_deg(G.out_degree()):
     sum_out_degree += deg*count
 print(sum_out_degree/len(G.nodes()))
 
+
+degree_sequence = sorted([d for n, d in G.in_degree()], reverse=True)  # degree sequence
+# print "Degree sequence", degree_sequence
+degreeCount = collections.Counter(degree_sequence)
+deg, cnt = zip(*degreeCount.items())
+
+fig, ax = plt.subplots()
+plt.bar(deg, cnt, width=0.80, color='b')
+
+plt.title("In-Degree Histogram")
+plt.ylabel("Count")
+plt.xlabel("In-Degree")
+ax.set_xticks([d + 1 for d in deg])
+ax.set_xticklabels(deg)
 plt.show()
+
+degree_sequence = sorted([d for n, d in G.out_degree()], reverse=True)  # degree sequence
+# print "Degree sequence", degree_sequence
+degreeCount = collections.Counter(degree_sequence)
+deg, cnt = zip(*degreeCount.items())
+
+fig, ax = plt.subplots()
+plt.bar(deg, cnt, width=0.80, color='b')
+
+plt.title("Out-Degree Histogram")
+plt.ylabel("Count")
+plt.xlabel("Out-Degree")
+ax.set_xticks([d + 1 for d in deg])
+ax.set_xticklabels(deg)
+plt.show()
+
