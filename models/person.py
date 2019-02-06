@@ -1,1 +1,1 @@
-person.py
+class Person:

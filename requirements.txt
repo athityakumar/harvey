@@ -1,2 +1,4 @@
 networkx
 matplotlib
+pep8
+pycodestyle
