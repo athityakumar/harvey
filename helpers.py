@@ -40,3 +40,21 @@ def init_graph(filename):
             i += 1
 
     return(G)
+
+def print_landmark_cases(centrality_function, G, centrality_type, n=10):
+    print("Top cases according to {}:".format(centrality_type))
+    centrality_results = centrality_function(G)
+
+    if type(centrality_results) is dict:
+        centrality_results = sorted(list(centrality_results.items()), key= lambda k: k[1], reverse=True)[:n]
+    else:
+        centrality_results = list(centrality_results)
+        for i in range(len(centrality_results)):
+            centrality_results[i] = sorted(list(centrality_results[i].items()), key= lambda k: k[1], reverse=True)[:n]
+    if type(centrality_results) is dict:
+        for case_id, value in centrality_results:
+            print(case_id, value)
+    else:
+        for centrality_result in list(centrality_results):
+            for case_id, value in centrality_result:
+                print(case_id, value)
