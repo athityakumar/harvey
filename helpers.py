@@ -2,7 +2,7 @@ import collections
 import matplotlib.pyplot as plt
 from models.case import Case
 from models.legal_knowledge_graph import LegalKnowledgeGraph
-
+from globals import *
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
 def plot_distribution(distribution, title):
@@ -36,25 +36,33 @@ def init_graph(filename):
 
             print(i, case1.uuid, case2.uuid)
 
+            CASE_ID_TO_NAME_MAPPING[case1.uuid] = case1.title
+            CASE_ID_TO_NAME_MAPPING[case2.uuid] = case2.title
+            CASE_NAME_TO_ID_MAPPING[case1.title] = case1.uuid
+            CASE_NAME_TO_ID_MAPPING[case2.title] = case2.uuid
             G.add_citation(case1, case2)
             i += 1
 
     return(G)
 
-def print_landmark_cases(centrality_function, G, centrality_type, n=10):
+def print_landmark_cases(centrality_function, G, centrality_type, n=30):
     print("Top cases according to {}:".format(centrality_type))
     centrality_results = centrality_function(G)
 
     if type(centrality_results) is dict:
         centrality_results = sorted(list(centrality_results.items()), key= lambda k: k[1], reverse=True)[:n]
+        centrality_results = dict(centrality_results)
     else:
         centrality_results = list(centrality_results)
         for i in range(len(centrality_results)):
             centrality_results[i] = sorted(list(centrality_results[i].items()), key= lambda k: k[1], reverse=True)[:n]
+
     if type(centrality_results) is dict:
-        for case_id, value in centrality_results:
-            print(case_id, value)
+        for i, case_id in enumerate(centrality_results):
+            value = centrality_results[case_id]
+            print(i+1, "\t", case_id, "\t", CASE_ID_TO_NAME_MAPPING[case_id], "\t", value)
     else:
-        for centrality_result in list(centrality_results):
-            for case_id, value in centrality_result:
-                print(case_id, value)
+        for i, centrality_result in enumerate(list(centrality_results)):
+            print("Type {}".format(i+1))
+            for j, (case_id, value) in enumerate(centrality_result):
+                print(j+1, "\t", case_id, "\t", CASE_ID_TO_NAME_MAPPING[case_id], "\t", value)
