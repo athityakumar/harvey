@@ -20,40 +20,43 @@ for folder in folders:
 	for file in files:
 		with open(file) as html_file:
 			soup = BeautifulSoup(html_file, 'lxml')
+		
+		for elem in soup(text = "Subject:"):
+			x = elem.parent.parent
+			print(x.get_text())
 
-		# print(soup.prettify())
-		num = 0
-		for content in soup.find_all('div', class_ = 'locatorSection'):
-			num = num + 1
-			try:	
-				if num == 3:
-					# print("File: " + file)
-					subject_header = content.p.strong
-					# print(subject_header.next_sibling)
-					subject_list = subject_header.next_sibling.split(";")
-					# if subject_header.next_sibling not in unique_subjects:
-					# 	unique_subjects.append(subject_header.next_sibling)	
-					for subject in subject_list:	
-						all_subjects.append(subject)
-						if subject not in unique_subjects:
-							unique_subjects.append(subject)
-			except:	
-				print("File: " + file)
-				bad_files = bad_files + 1
+
+		# for content in soup.find_all('div', class_ = 'locatorSection'):
+		# 	num = num + 1
+		# 	try:	
+		# 		if num == 3:
+		# 			# print("File: " + file)
+		# 			subject_header = content.p.strong
+		# 			# print(subject_header.next_sibling)
+		# 			subject_list = subject_header.next_sibling.split(";")
+		# 			# if subject_header.next_sibling not in unique_subjects:
+		# 			# 	unique_subjects.append(subject_header.next_sibling)	
+		# 			for subject in subject_list:	
+		# 				all_subjects.append(subject)
+		# 				if subject not in unique_subjects:
+		# 					unique_subjects.append(subject)
+		# 	except:	
+		# 		print("File: " + file)
+		# 		bad_files = bad_files + 1
 
 	os.chdir('..')
 
-print("Number of bad files: " + str(bad_files))
-print("Total files scanned: " + str(count))
-print("Number of unique subjects found: " + str(len(unique_subjects)))
+# print("Number of bad files: " + str(bad_files))
+# print("Total files scanned: " + str(count))
+# print("Number of unique subjects found: " + str(len(unique_subjects)))
 
-frequency_subject = dict()
-for subject in unique_subjects:
-	freq = 0
-	frequency_subject[subject] = all_subjects.count(subject)
+# frequency_subject = dict()
+# for subject in unique_subjects:
+# 	freq = 0
+# 	frequency_subject[subject] = all_subjects.count(subject)
 
-print("Frequency of each subject")
-print(frequency_subject)
+# print("Frequency of each subject")
+# print(frequency_subject)
 
 # TODO: File handling for differently formatted html files
 
@@ -99,16 +102,24 @@ print(frequency_subject)
 ##############################################
 
 # for individual bad_files
-# 
-# files = list(os.listdir())
-# for file in files:
-# 	with open(file) as html_file:
-# 		soup = BeautifulSoup(html_file, 'lxml')
 
-# 	# print(soup.prettify())
-# 	num = 0
-# 	for content in soup.find_all('div', class_ = 'locatorSection'):
-# 		num = num + 1
-# 		if num == 2:
-# 			subject_header = content.p.strong
-# 			print(subject_header.next_sibling)
+with open("1996/1996_M_293.html") as html_file:
+	soup = BeautifulSoup(html_file, 'lxml')
+for elem in soup(text = "Subject:"):
+	x = elem.parent.parent
+	print(x.get_text())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
