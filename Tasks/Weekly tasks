@@ -1,0 +1,21 @@
+Task 1 :
+node title = case name/id
+1. different network properties like indegree, outdegree distributions -- do they follow power law ; clustering coefficient etc.
+2. average : outdegree, indegree of the cases
+
+Tasks 2:
+1. https://www.jstor.org/stable/pdf/25791897.pdf 
+see what centrality measures they are using to find out important judgments, replicate them.
+report top 15-20 cases/nodes, based on the different centralities
+for each of the top nodes, extract their subject
+
+2. plot the year vs #indgree citation, #outdegree citation as mentioned in the paper
+
+Tasks 3: 
+1. Run the centrality measures (incl. degree centrality) once again on the final graph
+2. Send me the rank list of the top 30 most important case *titles* (along with doc id) 
+
+1. For the top 5 landmark judgements (that comes from the best centrality metric) plot their indegree citations over the years.
+2. Extract the subjects & create a list of unique subjects, sorted in decreasing order of their frequency
+3. For top 5 unique subjects, plot their frequency in each year
+
