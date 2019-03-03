@@ -2,6 +2,8 @@ from globals import *
 from bs4 import BeautifulSoup
 import os
 
+from helpers import *
+
 directory = "CaseAnalysis"
 os.chdir(DATADIR + '/' + directory)
 
@@ -32,7 +34,18 @@ for folder in folders:
 	os.chdir('..')
 
 subjects_frequency = dict()
-for (cat, year_dist) in unique_subjects:
+for cat in unique_subjects:
+	year_dist = unique_subjects[cat]
 	subjects_frequency[cat] = 0
-	for (year, val) in year_dist:
+	for year in year_dist:
+		val = year_dist[year]
 		subjects_frequency[cat] += val
+
+def dict_sort(centrality_results, n=5):
+	centrality_results = sorted(list(centrality_results.items()), key= lambda k: k[1], reverse=True)[:n]
+	centrality_results = dict(centrality_results)
+	return(centrality_results)
+
+subjects_frequency = dict_sort(subjects_frequency)
+for top_subject in subjects_frequency:
+	plot_distribution(subjects_frequency[top_subject])

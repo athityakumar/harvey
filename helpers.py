@@ -5,7 +5,7 @@ from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
-def plot_distribution(distribution, title):
+def plot_distribution(distribution, title="Default value"):
     degree = [d for (d, c) in distribution]
     count = [c for (d, c) in distribution]
 

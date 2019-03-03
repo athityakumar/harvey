@@ -32,3 +32,8 @@ for top_case in TOP_CASES:
     for year in year_of_citing_cases:
         yearwise_distribution[top_case][year] += 1
 
+# Cumulative distribution
+for top_case in TOP_CASES:
+    for year in range(1954, 2019):
+        prev_year = str(int(year)-1)
+        yearwise_distribution[top_case][year] += yearwise_distribution[top_case][prev_year]
