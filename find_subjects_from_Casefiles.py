@@ -30,3 +30,9 @@ for folder in folders:
 					unique_subjects[subject][year] = 1
 
 	os.chdir('..')
+
+subjects_frequency = dict()
+for (cat, year_dist) in unique_subjects:
+	subjects_frequency[cat] = 0
+	for (year, val) in year_dist:
+		subjects_frequency[cat] += val
