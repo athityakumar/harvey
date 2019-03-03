@@ -1,3 +1,4 @@
 DATADIR = 'datafiles'
 CASE_ID_TO_NAME_MAPPING = dict()
 CASE_NAME_TO_ID_MAPPING = dict()
+CASE_NAME_TO_YEAR_MAPPING = dict()

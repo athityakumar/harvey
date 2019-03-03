@@ -5,7 +5,7 @@ from models.legal_knowledge_graph import LegalKnowledgeGraph
 from helpers import *
 from custom import *
 
-G = init_graph("{}/case-case-citation.txt".format(DATADIR)).fetch_subgraph(
+G = init_graph("{}/all_citations.txt".format(DATADIR)).fetch_subgraph(
         query_type='case')
 
 print(len(G.nodes()))
