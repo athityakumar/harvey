@@ -23,12 +23,12 @@ for folder in folders:
 			for subject in subject_list:
 				subject = subject.strip()
 				if subject in unique_subjects:
-					if year in unique_subjects[subject]:
-						unique_subjects[subject][year] += 1
-					else:
-						unique_subjects[subject][year] = 1
+					unique_subjects[subject][year] += 1
 				else:
 					unique_subjects[subject] = dict()
+					for y in range(1953, 2019):
+						y = str(y)
+						unique_subjects[subject][y] = 0
 					unique_subjects[subject][year] = 1
 
 	os.chdir('..')
@@ -46,6 +46,8 @@ def dict_sort(centrality_results, n=5):
 	centrality_results = dict(centrality_results)
 	return(centrality_results)
 
-subjects_frequency = dict_sort(subjects_frequency)
-for top_subject in subjects_frequency:
-	plot_distribution(subjects_frequency[top_subject])
+top_subjects_frequency = dict_sort(subjects_frequency)
+for top_subject in top_subjects_frequency:
+	subj_dist = unique_subjects[top_subject]
+	subj_dist_tuple = [(year, subj_dist[year]) for year in subj_dist]
+	plot_distribution(subj_dist_tuple, "Citations of {} cases over 1953-2018".format(top_subject))
