@@ -1,5 +1,7 @@
 # Results
 
+### List of Content
+
 The results currently comprise of the following centrality measure rankings:
 
 1. [Graph metadata](#graph-metadata)
@@ -14,23 +16,26 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Graph metadata
 
-- Number of nodes: 22308
-- Number of edges: 57392
+[(^ Go back to LoC)](#list-of-content)
+
+- Number of nodes: 32573
+- Number of edges: 105378
 - In-degree distribution of the form (in_degree, count):
 
-`[(106, 1), (90, 1), (85, 1), (72, 2), (70, 1), (69, 1), (67, 1), (66, 1), (63, 1), (62, 2), (61, 1), (54, 1), (53, 2), (52, 1), (51, 1), (50, 2), (49, 1), (48, 2), (47, 1), (46, 3), (44, 2), (43, 3), (42, 4), (41, 3), (40, 3), (39, 5), (38, 1), (37, 3), (36, 3), (35, 3), (34, 4), (33, 2), (32, 8), (31, 7), (30, 13), (29, 12), (28, 10), (27, 15), (26, 11), (25, 18), (24, 14), (23, 17), (22, 28), (21, 20), (20, 39), (19, 35), (18, 52), (17, 57), (16, 60), (15, 89), (14, 72), (13, 110), (12, 136), (11, 172), (10, 215), (9, 231), (8, 323), (7, 454), (6, 582), (5, 817), (4, 1216), (3, 1724), (2, 2751), (1, 5259), (0, 7678)]`
+`[(179, 1), (167, 1), (156, 1), (146, 1), (144, 1), (125, 1), (120, 1), (111, 2), (107, 1), (105, 1), (100, 1), (97, 2), (94, 1), (93, 1), (88, 1), (84, 1), (83, 1), (81, 1), (79, 2), (78, 1), (73, 2), (72, 2), (71, 2), (70, 5), (68, 2), (67, 2), (66, 2), (63, 2), (62, 2), (61, 3), (60, 4), (58, 4), (57, 4), (55, 3), (53, 8), (52, 2), (51, 6), (50, 5), (49, 3), (48, 4), (47, 5), (46, 3), (45, 10), (44, 5), (43, 7), (42, 6), (41, 8), (40, 9), (39, 14), (38, 12), (37, 13), (36, 12), (35, 12), (34, 19), (33, 19), (32, 15), (31, 11), (30, 25), (29, 19), (28, 29), (27, 36), (26, 32), (25, 42), (24, 43), (23, 59), (22, 43), (21, 60), (20, 76), (19, 77), (18, 95), (17, 111), (16, 131), (15, 150), (14, 168), (13, 203), (12, 229), (11, 303), (10, 426), (9, 451), (8, 612), (7, 734), (6, 949), (5, 1264), (4, 1846), (3, 2573), (2, 3878), (1, 7450), (0, 10189)]`
 
 - Out-degree distribution of the form (out_degree, count):
 
-`[(74, 1), (69, 1), (68, 1), (59, 1), (57, 1), (53, 1), (49, 1), (46, 1), (44, 1), (43, 1), (42, 2), (40, 3), (39, 1), (38, 1), (37, 1), (36, 1), (34, 1), (33, 2), (32, 6), (31, 1), (30, 9), (29, 13), (28, 5), (27, 7), (26, 13), (25, 19), (24, 22), (23, 22), (22, 22), (21, 16), (20, 22), (19, 34), (18, 38), (17, 60), (16, 61), (15, 58), (14, 80), (13, 105), (12, 142), (11, 175), (10, 209), (9, 276), (8, 338), (7, 434), (6, 665), (5, 894), (4, 1270), (3, 1889), 
-(2, 3268), (1, 5701), (0, 6412)]`
+`[(185, 1), (108, 1), (106, 1), (96, 1), (90, 1), (85, 2), (79, 1), (75, 2), (73, 1), (70, 1), (69, 1), (64, 1), (63, 1), (62, 1), (61, 2), (60, 1), (59, 2), (57, 1), (55, 1), (54, 2), (52, 3), (51, 1), (50, 2), (49, 2), (48, 1), (47, 3), (46, 2), (45, 5), (44, 4), (43, 4), (42, 3), (41, 5), (40, 5), (39, 6), (38, 9), (37, 6), (36, 9), (35, 11), (34, 10), (33, 11), (32, 15), (31, 20), (30, 17), (29, 17), (28, 26), (27, 25), (26, 25), (25, 37), (24, 36), (23, 47), (22, 45), (21, 54), (20, 61), (19, 85), (18, 103), (17, 104), (16, 139), (15, 149), (14, 171), (13, 223), (12, 260), (11, 338), (10, 391), (9, 526), (8, 639), (7, 873), (6, 1156), (5, 1435), (4, 2023), (3, 2909), (2, 4444), (1, 7591), (0, 8462)]`
 
-- Average clustering coefficient: 0.08134426818523896
-- Average in_degree: 2.572709341940111
-- Average out_degree: 2.572709341940111
+- Average clustering coefficient: 0.08839752542011271
+- Average in_degree: 3.235133392687195
+- Average out_degree: 3.235133392687195
 
 
 ### In-Degree centrality
+
+[(^ Go back to LoC)](#list-of-content)
 
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
@@ -67,7 +72,10 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Eigenvector centrality
 
-| S No | Case ID                           | Case Title                                                                                   | Score                 |
+[(^ Go back to LoC)](#list-of-content)
+
+| S No | Case ID                           | Case Title                                                                                 | Score                 |
+|------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
 | 1  | I2487B401006E11DFBEF1C9F02835E615 | State of Maharashtra v Mayer Hans George                                                 | 0.6793025288891708 |
 | 2  | I01BADBF0006E11DFBEF1C9F02835E615 | Indo-China Steam Navigation Company Limited v Jasjit Singh, Additional Collector of Customs and Others     |0.679204457351354    |
 | 3  | I249BD842006E11DFBEF1C9F02835E615 | S.Khader Sheriff v Munnuswami Gounder and Others                                                           | 0.12927045849649463  |
@@ -100,6 +108,8 @@ The results currently comprise of the following centrality measure rankings:
 | 30 | I0E8405A1006E11DFBEF1C9F02835E615 | Narbada Prasad v Chhagan Lal and Others                                                                    | 0.01991418557799712  |
 
 ### Katz centrality
+
+[(^ Go back to LoC)](#list-of-content)
 
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
@@ -136,6 +146,8 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Closeness centrality
 
+[(^ Go back to LoC)](#list-of-content)
+
 | SNo | Case ID                           | Case Title                                                                        | Score                 |
 |-----|-----------------------------------|-----------------------------------------------------------------------------------|-----------------------|
 | 1  | I01EBFE10006E11DFBEF1C9F02835E615 | Maneka Gandhi v Union of India                                                      | 0.07130285579464027  |
@@ -171,6 +183,8 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Pagerank
 
+[(^ Go back to LoC)](#list-of-content)
+
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
 | 1  | I01EBFE10006E11DFBEF1C9F02835E615 | Maneka Gandhi v Union of India                                                               | 0.001282150863812228  |
@@ -205,6 +219,9 @@ The results currently comprise of the following centrality measure rankings:
 | 30 | I07B020B0006E11DFBEF1C9F02835E615 | Masalti v State of Uttar Pradesh                                                             | 0.0005658411628964024 |
 
 ### Inward relevance centrality
+
+[(^ Go back to LoC)](#list-of-content)
+
 | S No | Case ID                         | Case Title                                                                                 | Score               |
 |------|---------------------------------|--------------------------------------------------------------------------------------------|---------------------|
 | 1  | I3B9703A0364711E79FDFFC7FDF999C97 | (1) Mukesh and another; (2) Vinay Sharma and another v State for (NCT of Delhi) and others | 0.18416098342358436 |
@@ -238,7 +255,11 @@ The results currently comprise of the following centrality measure rankings:
 | 29 | I21756AF1006E11DFBEF1C9F02835E615 | State of Rajasthan v Kheraj Ram                                                            | 0.1104925260440664  |
 | 30 | I5FDA9F91006E11DFBEF1C9F02835E615 | Liyakat v State Of Uttaranchal                                                             | 0.11007183318553983 |
 
+
 ### Outward relevance centrality
+
+[(^ Go back to LoC)](#list-of-content)
+
 | S No | Case ID                         | Case Title                                                      | Score                |
 |------|---------------------------------|-----------------------------------------------------------------|----------------------|
 | 1  | I01B6BD41006E11DFBEF1C9F02835E615 | Sharad Birdhichand Sarda v State of Maharashtra                 | 0.3635457349128727   |
