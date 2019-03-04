@@ -1,5 +1,7 @@
 # Results
 
+### List of Content
+
 The results currently comprise of the following centrality measure rankings:
 
 1. [Graph metadata](#graph-metadata)
@@ -13,6 +15,8 @@ The results currently comprise of the following centrality measure rankings:
 
 
 ### Graph metadata
+
+[(^ Go back to LoC)](#list-of-content)
 
 - Number of nodes: 32573
 - Number of edges: 105378
@@ -30,6 +34,8 @@ The results currently comprise of the following centrality measure rankings:
 
 
 ### In-Degree centrality
+
+[(^ Go back to LoC)](#list-of-content)
 
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
@@ -66,6 +72,8 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Eigenvector centrality
 
+[(^ Go back to LoC)](#list-of-content)
+
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
 | 1  | I2487B401006E11DFBEF1C9F02835E615 | State of Maharashtra v Mayer Hans George                                                 | 0.6793025288891708 |
@@ -100,6 +108,8 @@ The results currently comprise of the following centrality measure rankings:
 | 30 | I0E8405A1006E11DFBEF1C9F02835E615 | Narbada Prasad v Chhagan Lal and Others                                                                    | 0.01991418557799712  |
 
 ### Katz centrality
+
+[(^ Go back to LoC)](#list-of-content)
 
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
@@ -136,6 +146,8 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Closeness centrality
 
+[(^ Go back to LoC)](#list-of-content)
+
 | SNo | Case ID                           | Case Title                                                                        | Score                 |
 |-----|-----------------------------------|-----------------------------------------------------------------------------------|-----------------------|
 | 1  | I01EBFE10006E11DFBEF1C9F02835E615 | Maneka Gandhi v Union of India                                                      | 0.07130285579464027  |
@@ -171,6 +183,8 @@ The results currently comprise of the following centrality measure rankings:
 
 ### Pagerank
 
+[(^ Go back to LoC)](#list-of-content)
+
 | S No | Case ID                           | Case Title                                                                                 | Score                 |
 |------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
 | 1  | I01EBFE10006E11DFBEF1C9F02835E615 | Maneka Gandhi v Union of India                                                               | 0.001282150863812228  |
@@ -205,6 +219,9 @@ The results currently comprise of the following centrality measure rankings:
 | 30 | I07B020B0006E11DFBEF1C9F02835E615 | Masalti v State of Uttar Pradesh                                                             | 0.0005658411628964024 |
 
 ### Inward relevance centrality
+
+[(^ Go back to LoC)](#list-of-content)
+
 | S No | Case ID                         | Case Title                                                                                 | Score               |
 |------|---------------------------------|--------------------------------------------------------------------------------------------|---------------------|
 | 1  | I3B9703A0364711E79FDFFC7FDF999C97 | (1) Mukesh and another; (2) Vinay Sharma and another v State for (NCT of Delhi) and others | 0.18416098342358436 |
@@ -237,7 +254,10 @@ The results currently comprise of the following centrality measure rankings:
 | 28 | I576F03A0006E11DFBEF1C9F02835E615 | Inspector of Police, Tamil Nadu v Balaprasanna                                             | 0.11082511262032048 |
 | 29 | I21756AF1006E11DFBEF1C9F02835E615 | State of Rajasthan v Kheraj Ram                                                            | 0.1104925260440664  |
 | 30 | I5FDA9F91006E11DFBEF1C9F02835E615 | Liyakat v State Of Uttaranchal                                                             | 0.11007183318553983 |
+
 ### Outward relevance centrality
+
+[(^ Go back to LoC)](#list-of-content)
 
 | S No | Case ID                         | Case Title                                                      | Score                |
 |------|---------------------------------|-----------------------------------------------------------------|----------------------|
