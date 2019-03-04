@@ -237,8 +237,8 @@ The results currently comprise of the following centrality measure rankings:
 | 28 | I576F03A0006E11DFBEF1C9F02835E615 | Inspector of Police, Tamil Nadu v Balaprasanna                                             | 0.11082511262032048 |
 | 29 | I21756AF1006E11DFBEF1C9F02835E615 | State of Rajasthan v Kheraj Ram                                                            | 0.1104925260440664  |
 | 30 | I5FDA9F91006E11DFBEF1C9F02835E615 | Liyakat v State Of Uttaranchal                                                             | 0.11007183318553983 |
-### Outward relevance centrality
 
+### Outward relevance centrality
 | S No | Case ID                         | Case Title                                                      | Score                |
 |------|---------------------------------|-----------------------------------------------------------------|----------------------|
 | 1  | I01B6BD41006E11DFBEF1C9F02835E615 | Sharad Birdhichand Sarda v State of Maharashtra                 | 0.3635457349128727   |
@@ -271,3 +271,10 @@ The results currently comprise of the following centrality measure rankings:
 | 28 | I1840B2A1006E11DFBEF1C9F02835E615 | Mahesh S/O Ram Narain and Others v State of Madhya Pradesh      | 0.0505573518256061   |
 | 29 | I07BC0791006E11DFBEF1C9F02835E615 | Chandrappa & Ors v State Of Karnataka                           | 0.05044301901019895  |
 | 30 | I023FC360006E11DFBEF1C9F02835E615 | Allauddin Mian and Others v State of Bihar                      | 0.049595346173091866 |
+
+### Top 5 subjects: 
+1. Practices and Procedures
+2. Criminal
+3. Constitution
+4. Law and Property Cases
+5. Labour and Industrial Law
