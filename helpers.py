@@ -5,7 +5,7 @@ from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
-def plot_distribution(distribution, title="Default value"):
+def plot_distribution(distribution, title="Default value", filename=None):
     degree = [d for (d, c) in distribution]
     count = [c for (d, c) in distribution]
 
@@ -16,9 +16,13 @@ def plot_distribution(distribution, title="Default value"):
     plt.ylabel("Count")
     plt.xlabel(title)
     ax.set_xticks([d for d in degree])
+    plt.xticks(rotation=90, fontSize=5)
     ax.set_xticklabels(degree)
-    plt.show()
 
+    if filename:
+        plt.savefig(filename, bbox_inches='tight', dpi=(200))
+    else:
+        plt.show()
 
 def init_graph(filename):
     MAX_LIMIT = 1000
@@ -45,8 +49,7 @@ def init_graph(filename):
 
     return(G)
 
-def print_landmark_cases(centrality_function, G, centrality_type, n=30):
-    print("Top cases according to {}:".format(centrality_type))
+def compute_landmark_cases(centrality_function, G, centrality_type, n=30):
     centrality_results = centrality_function(G)
 
     if type(centrality_results) is dict:
@@ -56,6 +59,11 @@ def print_landmark_cases(centrality_function, G, centrality_type, n=30):
         centrality_results = list(centrality_results)
         for i in range(len(centrality_results)):
             centrality_results[i] = sorted(list(centrality_results[i].items()), key= lambda k: k[1], reverse=True)[:n]
+    return(centrality_results)
+
+def print_landmark_cases(centrality_function, G, centrality_type, n=30):
+    print("Top cases according to {}:".format(centrality_type))
+    centrality_results = compute_landmark_cases(centrality_function, G, centrality_type, n)
 
     if type(centrality_results) is dict:
         for i, case_id in enumerate(centrality_results):
