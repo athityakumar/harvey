@@ -9,7 +9,7 @@ os.chdir(DATADIR + '/' + directory)
 
 folders = [name for name in os.listdir() if not name.startswith(".")]
 unique_subjects = dict()
-for folder in folders[0:1]:
+for folder in folders:
 	year = folder
 	os.chdir(folder)
 	files = list(os.listdir())
@@ -32,6 +32,8 @@ for folder in folders[0:1]:
 					unique_subjects[subject][year] = 1
 
 	os.chdir('..')
+
+SUBJECTS = [subject for subject in unique_subjects]
 
 subjects_frequency = dict()
 for cat in unique_subjects:
