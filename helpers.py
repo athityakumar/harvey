@@ -5,7 +5,7 @@ from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
-def plot_distribution(distribution, title="Default value", filename=None):
+def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200):
     degree = [d for (d, c) in distribution]
     count = [c for (d, c) in distribution]
 
@@ -16,11 +16,11 @@ def plot_distribution(distribution, title="Default value", filename=None):
     plt.ylabel("Count")
     plt.xlabel(title)
     ax.set_xticks([d for d in degree])
-    plt.xticks(rotation=90, fontSize=5)
+    plt.xticks(rotation=90, fontSize=fontSize)
     ax.set_xticklabels(degree)
 
     if filename:
-        plt.savefig(filename, bbox_inches='tight', dpi=(200))
+        plt.savefig(filename, bbox_inches='tight', dpi=(dpi))
     else:
         plt.show()
 
