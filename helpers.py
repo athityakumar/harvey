@@ -16,6 +16,7 @@ def plot_distribution(distribution, title="Default value"):
     plt.ylabel("Count")
     plt.xlabel(title)
     ax.set_xticks([d for d in degree])
+    plt.xticks(rotation=90)
     ax.set_xticklabels(degree)
     plt.show()
 

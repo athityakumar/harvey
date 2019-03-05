@@ -9,7 +9,7 @@ os.chdir(DATADIR + '/' + directory)
 
 folders = [name for name in os.listdir() if not name.startswith(".")]
 unique_subjects = dict()
-for folder in folders:
+for folder in folders[0:1]:
 	year = folder
 	os.chdir(folder)
 	files = list(os.listdir())
