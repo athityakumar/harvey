@@ -19,3 +19,9 @@ Tasks 3:
 2. Extract the subjects & create a list of unique subjects, sorted in decreasing order of their frequency
 3. For top 5 unique subjects, plot their frequency in each year
 
+Tasks 4:
+1. For each subject of case (mainly criminal), get unique keywords and do centrality metrics
+2. Do clustering for the above subgraph and community analysis on clusters
+
+Future work:
+For paper citation networks, there was a normalized citation count over the years plot, which we can do similarly for our network
