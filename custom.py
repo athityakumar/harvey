@@ -142,3 +142,12 @@ def custom_centrality(G, max_iter=1000, tol=1.0e-6, nstart=None,
             return(x,y)
     raise nx.PowerIterationFailedConvergence(max_iter)
 
+def inward_relevance_centrality(G, max_iter=1000, tol=1.0e-6, nstart=None,
+                           weight=None):
+    x, y = custom_centrality(G, max_iter=max_iter, tol=tol, nstart=nstart, weight=weight)
+    return(x)
+
+def outward_relevance_centrality(G, max_iter=1000, tol=1.0e-6, nstart=None,
+                           weight=None):
+    x, y = custom_centrality(G, max_iter=max_iter, tol=tol, nstart=nstart, weight=weight)
+    return(y)
