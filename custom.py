@@ -138,7 +138,7 @@ def custom_centrality(G, max_iter=1000, tol=1.0e-6, nstart=None,
         y = {k: v / norm_y for k, v in y.items()}
 
         # Check for convergence (in the L_1 norm).
-        if sum(abs(x[n] - xlast[n]) for n in x) < nnodes * tol:
+        if sum(abs(x[n] - xlast[n]) for n in x) < nnodes * tol and sum(abs(y[n] - ylast[n]) for n in y) < nnodes * tol:
             return(x,y)
     raise nx.PowerIterationFailedConvergence(max_iter)
 
