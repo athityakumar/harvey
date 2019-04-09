@@ -198,7 +198,7 @@ The results currently comprise of the following centrality measure rankings:
 | 9  | I01EBFE11006E11DFBEF1C9F02835E615 | Ramana Dayaram Shetty v International Airport Authority of India and Others                  | 0.0007253783563206538 |
 | 10 | I01BCB0B2006E11DFBEF1C9F02835E615 | Union Of India And Ors. Etc. Etc. v Bombay Tyre International Ltd. Etc. Etc.                 | 0.000717764862665862  |
 | 11 | I07B06ED0006E11DFBEF1C9F02835E615 | Bhagat Ram v State of Punjab                                                                 | 0.0006885470562575197 |
-| 12 | I07BB9261006E11DFBEF1C9F02835E615 | Aher Raja Khima v State of Saurashtra                                   	                    | 0.0006865106338473321 |
+| 12 | I07BB9261006E11DFBEF1C9F02835E615 | Aher Raja Khima v State of Saurashtra                                   	                | 0.0006865106338473321 |
 | 13 | I07D69470006E11DFBEF1C9F02835E615 | H. N. Rishbud and Inder Singh v State of Delhi                                               | 0.0006845639052411892 |
 | 14 | I1EC0AB30006E11DFBEF1C9F02835E615 | Muir Mills Company, Limited v Suti Mills Mazdoor Union, Kanpur                               | 0.0006805007995831949 |
 | 15 | I0E4F6113006E11DFBEF1C9F02835E615 | Central Bank of India Limited v P.S. Rajagopalan Etc                                         | 0.0006638182415106773 |
