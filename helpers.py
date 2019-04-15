@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from models.case import Case
 from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
+import numpy as np
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
 def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200):
@@ -49,7 +50,7 @@ def init_graph(filename):
 
     return(G)
 
-def compute_landmark_cases(centrality_function, G, centrality_type, n=30):
+def compute_landmark_cases(centrality_function, G, centrality_type, n=50):
     centrality_results = centrality_function(G)
 
     if type(centrality_results) is dict:
@@ -61,7 +62,7 @@ def compute_landmark_cases(centrality_function, G, centrality_type, n=30):
             centrality_results[i] = sorted(list(centrality_results[i].items()), key= lambda k: k[1], reverse=True)[:n]
     return(centrality_results)
 
-def print_landmark_cases(centrality_function, G, centrality_type, n=30):
+def print_landmark_cases(centrality_function, G, centrality_type, n=50):
     print("Top cases according to {}:".format(centrality_type))
     centrality_results = compute_landmark_cases(centrality_function, G, centrality_type, n)
 
@@ -69,8 +70,37 @@ def print_landmark_cases(centrality_function, G, centrality_type, n=30):
         for i, case_id in enumerate(centrality_results):
             value = centrality_results[case_id]
             print(i+1, "\t", case_id, "\t", CASE_ID_TO_NAME_MAPPING[case_id], "\t", value)
+            if case_id not in case_commonality_count:
+                case_commonality_count[case_id] = 1
+                case_rank_cumulative_sum[case_id] = [] #rank
+                case_rank_cumulative_sum[case_id].append(i+1)
+            else:
+                case_commonality_count[case_id] += 1
+                case_rank_cumulative_sum[case_id].append(i+1)
     else:
         for i, centrality_result in enumerate(list(centrality_results)):
             print("Type {}".format(i+1))
             for j, (case_id, value) in enumerate(centrality_result):
                 print(j+1, "\t", case_id, "\t", CASE_ID_TO_NAME_MAPPING[case_id], "\t", value)
+                if case_id not in case_commonality_count:
+                    case_commonality_count[case_id] = 1
+                    case_rank_cumulative_sum[case_id] = [] #rank
+                    case_rank_cumulative_sum[case_id].append(j+1)
+
+                else:
+                    case_commonality_count[case_id] += 1
+                    case_rank_cumulative_sum[case_id].append(j+1)
+
+def print_common_cases():
+    from scipy import stats
+    case_commonality = sorted(case_commonality_count.items(), key=lambda kv: kv[1], reverse=True)
+    print(case_commonality)
+    for case_id, count in case_commonality:
+        print(count, "\t", case_id, "\t", CASE_ID_TO_NAME_MAPPING[case_id])
+        
+    print("-" * 80)
+
+    case_rank_cumulative = sorted(case_rank_cumulative_sum.items(), key=lambda kv: kv[1])
+    print("case_id", ";\t", "Title", ";\t", "Harmonic mean", ";\t", "Geometric mean", ";\t", "Mean", ";\t", "Average")
+    for case_id, rank in case_rank_cumulative:
+        print(case_id, ";\t", CASE_ID_TO_NAME_MAPPING[case_id], ";\t", stats.hmean(rank), ";\t", stats.gmean(rank), ";\t", np.mean(rank), ";\t", np.average(rank))

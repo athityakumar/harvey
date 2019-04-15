@@ -25,3 +25,10 @@ Tasks 4:
 
 Future work:
 For paper citation networks, there was a normalized citation count over the years plot, which we can do similarly for our network
+
+Tasks 5:
+1. Find which cases appear in top 50 in all the metrics
+
+2. Design a new metric which is cumulative weighted sum of all the metrics. See if cases from (1) appear in the top results.
+
+3. Additionally see metrics on k-core
