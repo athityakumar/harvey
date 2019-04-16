@@ -4,6 +4,7 @@ from models.case import Case
 from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 import numpy as np
+from scipy import stats
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
 def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200):
@@ -54,12 +55,12 @@ def compute_landmark_cases(centrality_function, G, centrality_type, n=50):
     centrality_results = centrality_function(G)
 
     if type(centrality_results) is dict:
-        centrality_results = sorted(list(centrality_results.items()), key= lambda k: k[1], reverse=True)[:n]
+        centrality_results = sorted(list(centrality_results.items()), key= lambda k: k[1], reverse=True)
         centrality_results = dict(centrality_results)
     else:
         centrality_results = list(centrality_results)
         for i in range(len(centrality_results)):
-            centrality_results[i] = sorted(list(centrality_results[i].items()), key= lambda k: k[1], reverse=True)[:n]
+            centrality_results[i] = sorted(list(centrality_results[i].items()), key= lambda k: k[1], reverse=True)
     return(centrality_results)
 
 def print_landmark_cases(centrality_function, G, centrality_type, n=50):
@@ -92,7 +93,7 @@ def print_landmark_cases(centrality_function, G, centrality_type, n=50):
                     case_rank_cumulative_sum[case_id].append(j+1)
 
 def print_common_cases():
-    from scipy import stats
+    
     case_commonality = sorted(case_commonality_count.items(), key=lambda kv: kv[1], reverse=True)
     print(case_commonality)
     for case_id, count in case_commonality:
@@ -101,6 +102,6 @@ def print_common_cases():
     print("-" * 80)
 
     case_rank_cumulative = sorted(case_rank_cumulative_sum.items(), key=lambda kv: kv[1])
-    print("case_id", ";\t", "Title", ";\t", "Harmonic mean", ";\t", "Geometric mean", ";\t", "Mean", ";\t", "Average")
+    print("Rank", ";\t", "case_id", ";\t", "Title", ";\t", "Harmonic mean", ";\t", "Geometric mean", ";\t", "Mean", ";\t", "Average")
     for case_id, rank in case_rank_cumulative:
-        print(case_id, ";\t", CASE_ID_TO_NAME_MAPPING[case_id], ";\t", stats.hmean(rank), ";\t", stats.gmean(rank), ";\t", np.mean(rank), ";\t", np.average(rank))
+        print(rank, ";\t", case_id, ";\t", CASE_ID_TO_NAME_MAPPING[case_id], ";\t", stats.hmean(rank), ";\t", stats.gmean(rank), ";\t", np.mean(rank), ";\t", np.average(rank))
