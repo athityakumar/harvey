@@ -15,6 +15,7 @@ The results currently comprise of the following centrality measure rankings:
 9. [Outward relevance centrality](#outward-relevance-centrality)
 10. [Top 5 subjects](#top-5-subjects)
 11. [Weighted-Rank metric](#rank-metric-results)
+12. [Acts distribution](#acts-distribution)
 
 ### Graph metadata
 
@@ -614,3 +615,15 @@ The results currently comprise of the following centrality measure rankings:
 | Ajitsingh Harnamsingh Gujral v State of Maharashtra                                               | 50            | 50             | 50          | 50          |
 | Haresh Mohandas Rajput v State of Maharashtra                                                     | 50            | 50             | 50          | 50          |
 | Samant N. Balkrishna and Another v George Fernandez and Others                                    | 49.49494949   | 49.49747468    | 49.5        | 49.5        |
+
+### Acts distribution
+
+[(^ Go back to LoC)](#list-of-content)
+
+Total number of distinct acts: 55279
+
+1. 'Constitution of India, 1950': 14079
+2. 'Indian Penal Code, 1860': 8432
+3. 'Code of Criminal Procedure, 1973': 5634
+4. 'Code of Civil Procedure, 1908': 4810
+5. 'Indian Penal Code, 1860 s. 302': 2618

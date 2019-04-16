@@ -6,6 +6,9 @@ class LegalKnowledgeGraph(nx.DiGraph):
         # TODO: Abstract case and add more metadata support w/ categories
         self.add_node(case.uuid, type='case')
 
+    def add_act(self, act_name):
+        self.add_node(act_name, type='act')
+
     def fetch_subgraph(self, query_type='', query_nodes=set()):
         if (not query_type and not query_nodes):
             return(self)
