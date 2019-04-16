@@ -5,6 +5,7 @@ from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 import numpy as np
 from scipy import stats
+from bs4 import BeautifulSoup
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
 def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200):
@@ -48,6 +49,18 @@ def init_graph(filename):
             CASE_NAME_TO_ID_MAPPING[case2.title] = case2.uuid
             G.add_citation(case1, case2)
             i += 1
+
+    with open("datafiles/all_indexes.txt") as f:
+        for line in f.readlines():
+            # if i > MAX_LIMIT:
+            #     break
+            case_path, case_name = line.rstrip().split("-->")
+
+            if case_name in CASE_NAME_TO_ID_MAPPING:
+	            case_id = CASE_NAME_TO_ID_MAPPING[case_name]
+	            case_path = "datafiles/"+case_path
+
+	            CASE_ID_TO_FILE_MAPPING[case_id] = case_path
 
     return(G)
 
@@ -105,3 +118,13 @@ def print_common_cases():
     print("Rank", ";\t", "case_id", ";\t", "Title", ";\t", "Harmonic mean", ";\t", "Geometric mean", ";\t", "Mean", ";\t", "Average")
     for case_id, rank in case_rank_cumulative:
         print(rank, ";\t", case_id, ";\t", CASE_ID_TO_NAME_MAPPING[case_id], ";\t", stats.hmean(rank), ";\t", stats.gmean(rank), ";\t", np.mean(rank), ";\t", np.average(rank))
+
+
+def find_subjects_for_case(file):
+	with open(file) as html_file:
+		soup = BeautifulSoup(html_file, 'lxml')
+	
+	for elem in soup(text = "Subject:"):
+		par = elem.parent.parent
+		subject_list = par.get_text().replace("Subject:", '').split(';')
+	return subject_list

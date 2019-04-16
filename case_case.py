@@ -59,5 +59,14 @@ for case_id in unfrozen_graph:
 	if len(unfrozen_graph[case_id]) > min_degree:
 		rich_club.append(case_id)
 print([CASE_ID_TO_NAME_MAPPING[case_id] for case_id in rich_club])
-# for _ in rich_club_coefficient.nodes():
-#     print(_, "\t", CASE_ID_TO_NAME_MAPPING[_])
+
+k_clique_communities = list(nx.algorithms.community.k_clique_communities(unfrozen_graph, k=8))
+# print(k_clique_communities)
+
+for k_clique in k_clique_communities:
+	print("\n")
+	for case_id in k_clique:
+		if case_id in CASE_ID_TO_FILE_MAPPING:
+			path = CASE_ID_TO_FILE_MAPPING[case_id]
+			subjects = find_subjects_for_case(path)
+			print(case_id,"\t", CASE_ID_TO_NAME_MAPPING[case_id],"\t", ", ".join(subjects))

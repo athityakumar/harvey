@@ -1,7 +1,6 @@
 from globals import *
 from bs4 import BeautifulSoup
 import os
-
 from helpers import *
 
 directory = "CaseAnalysis"

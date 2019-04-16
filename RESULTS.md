@@ -627,3 +627,79 @@ Total number of distinct acts: 55279
 3. 'Code of Criminal Procedure, 1973': 5634
 4. 'Code of Civil Procedure, 1908': 4810
 5. 'Indian Penal Code, 1860 s. 302': 2618
+
+### Rich Club of Indian Legal System
+
+1. 'Maneka Gandhi v Union of India'
+2. 'Ramana Dayaram Shetty v International Airport Authority of India and Others'
+3. 'Bachan Singh Etc. Etc. v State Of Punjab Etc. Etc.'
+4. 'D. S. Nakara and Others v Union of India'
+5. 'Machhi Singh And Others v State Of Punjab'
+6. 'Sharad Birdhichand Sarda v State of Maharashtra'
+7. 'State of Haryana and Others v Ch. Bhajan Lal and Others'
+8. '(1) Mukesh and another; (2) Vinay Sharma and another v State for (NCT of Delhi) and others'
+
+### 8-Clique Communities
+
+| I0B4E7CD11D0511E0B5D3A1F8B1FD29B1 | Suraj Bhan Meena and another v State of Rajasthan and others                                  | Constitution,  Service                                          |
+|-----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| I0B516351006E11DFBEF1C9F02835E615 | Ajit Singh Januja and Others v State of Punjab and Others                                     | Corporate,  Indirect Tax,  Labour & Industrial Law,  Service    |
+| I4535B3001F8711E39E0DCAF214884F34 | H.P. Scheduled Tribes Employees Federation and another v Himachal Pradesh S.V.K.K. and others | Service                                                         |
+| I0B51B170006E11DFBEF1C9F02835E615 | Indra Sawhney and Others v Union of India and Others                                          | Administrative,  Constitution                                   |
+| I0B51B171006E11DFBEF1C9F02835E615 | Union of India and Others v Virpal Singh Chauhan                                              | Service                                                         |
+| I0C08CC72006E11DFBEF1C9F02835E615 | Jagdish Lal and Others v State of Haryana and Others                                          | Service                                                         |
+| ICBC523705D9D11E387C8E2BC6762BDA7 | Uttar Pradesh Power Corporation Limited and another v Rajesh Kumar and others                 | Service                                                         |
+| I2A4A01E0006E11DFBEF1C9F02835E615 | Ajit Singh and Others (Ii) v State of Punjab and Others                                       | Constitution,  Service                                          |
+|                                   |                                                                                               |                                                                 |
+|                                   |                                                                                               |                                                                 |
+| IEBB0B97010CA11DFA8D7DEBB2459D435 | Daya Nand v State of Haryana                                                                  | Criminal                                                        |
+| I4D434122006E11DFBEF1C9F02835E615 | Abbas Ali v State Of Rajasthan                                                                | Criminal,  Practice & Procedure                                 |
+| I4D438F40006E11DFBEF1C9F02835E615 | Rajinder v State of Haryana                                                                   | Criminal,  Defence & Security Forces,  Practice & Procedure     |
+| I217A25E0006E11DFBEF1C9F02835E615 | Augustine Saldanha v State Of Karnataka                                                       | Criminal                                                        |
+| I05470FF2006E11DFBEF1C9F02835E615 | Virsa Singh. v The State Of Punjab                                                            | Criminal                                                        |
+| I21C22B63006E11DFBEF1C9F02835E615 | Thangaiya v State Of Tamil Nadu                                                               | Criminal,  Practice & Procedure                                 |
+| I11AEB8B1006E11DFBEF1C9F02835E615 | State of Andhra Pradesh v Rayavarapu Punnayya and Another                                     | Criminal,  Tort                                                 |
+| I11AE91A0006E11DFBEF1C9F02835E615 | Abdul Waheed Khan Alias Waheed and Others v State of Andhra Pradesh                           | Criminal,  Defence & Security Forces                            |
+| I11AEB8B0006E11DFBEF1C9F02835E615 | Kalarimadathil Unni v State of Kerala                                                         | Criminal                                                        |
+|                                   |                                                                                               |                                                                 |
+|                                   |                                                                                               |                                                                 |
+| I01DB8350006E11DFBEF1C9F02835E615 | Lila Dhar v State Of Rajasthan & Ors.                                                         | Constitution,  Labour & Industrial Law,  Tort                   |
+| I49F17E10006E11DFBEF1C9F02835E615 | Indian Airlines Corporation v Capt. K. C. Shukla and Others                                   | Labour & Industrial Law                                         |
+| I49F15700006E11DFBEF1C9F02835E615 | C. P. Kalra v Air India Through Its Managing Director, Bombay and Others                      | Labour & Industrial Law                                         |
+| I182D51B1006E11DFBEF1C9F02835E615 | State Of U . P ., Etc . v Rafiquddin & Ors. Etc.                                              | Constitution,  Indirect Tax,  Labour & Industrial Law,  Service |
+| I49F12FF1006E11DFBEF1C9F02835E615 | Union of India and Another v N. Chandrasekharan and Others                                    | Indirect Tax,  Labour & Industrial Law,  Service                |
+| I01DB8351006E11DFBEF1C9F02835E615 | Ashok Kumar Yadav and Others Etc v State of Haryana and Others Etc                            | Indirect Tax,  Labour & Industrial Law,  Service                |
+| I01FBB581006E11DFBEF1C9F02835E615 | Ajay Hasia Etc. v Khalid Mujib Sehravardi & Ors. Etc.                                         | Constitution,  Education,  Trusts & Associations                |
+| I4D578C70006E11DFBEF1C9F02835E615 | M.V. Thimmaiah and Others v Union Public Service Commission and Others                        | Administrative,  Practice & Procedure,  Service                 |
+|                                   |                                                                                               |                                                                 |
+|                                   |                                                                                               |                                                                 |
+| I11B06661006E11DFBEF1C9F02835E615 | State Of Tamil Nadu Through Superintendent Of Police,Cbi/Sit v Nalini And 25 Others           | Constitution,  Criminal                                         |
+| I11F95640006E11DFBEF1C9F02835E615 | S. N. Dube v N. B. Bhoir and Others                                                           | Criminal,  Municipalities & Local Governments,  Tort            |
+| I71429340986A11E29989E9DF31F7E198 | Yakub Abdul Razak Memon v The State Of Maharashtra, Through Cbi , Bombay                      | Criminal,  Practice & Procedure                                 |
+| I11B06662006E11DFBEF1C9F02835E615 | Jayawant Dattatray Suryarao and Others v State of Maharashtra                                 | Criminal                                                        |
+| I30756AA02C8811DFA8D5AF600F08E231 | Mohmed Amin @ Amin Choteli Rahim Miyan Shaikh and Another v C. B. I., through Its Director    | Criminal,  Practice & Procedure                                 |
+| I2A805420006E11DFBEF1C9F02835E615 | Lal Singh v State Of Gujarat & Anr.                                                           | Criminal                                                        |
+| IDC2CB3F0954711E2BE12F929ACAF8DBE | Sanjay Dutt (A-117) and others v The State Of Maharashtra, Through Cbi (Stf), Bombay          | Criminal,  Practice & Procedure                                 |
+| I0B79F9F0006E11DFBEF1C9F02835E615 | Kartar Singh v State of Punjab                                                                | Criminal                                                        |
+| I218BD921006E11DFBEF1C9F02835E615 | Jameel Ahmed and another v State of Rajasthan                                                 | Criminal,  Miscellaneous,  Petroleum & Gas,  Socio-Economic     |
+|                                   |                                                                                               |                                                                 |
+|                                   |                                                                                               |                                                                 |
+| I0BD8BBC1006E11DFBEF1C9F02835E615 | Parshotam Lal Dhingra v Union of India                                                        | Service                                                         |
+| I0B5FE241006E11DFBEF1C9F02835E615 | Jagdish Mitter v Union Of India                                                               | Constitution,  Service                                          |
+| I0232F220006E11DFBEF1C9F02835E615 | Champaklal Chimanlal Shah v Union of India                                                    | Labour & Industrial Law                                         |
+| I0226BD20006E11DFBEF1C9F02835E615 | State of Uttar Pradesh v Ram Chandra Trivedi                                                  | Labour & Industrial Law                                         |
+| I2446DA71006E11DFBEF1C9F02835E615 | State of Punjab and Another v Shri Sukh Raj Bahadur                                           | Indirect Tax,  Labour & Industrial Law,  Service                |
+| I31AF0340006E11DFBEF1C9F02835E615 | Madan Gopal v State of Punjab and Others                                                      | Labour & Industrial Law                                         |
+| I31AF0341006E11DFBEF1C9F02835E615 | Radhey Shyam Gupta v U. P. State Agro Industries Corporation and Another                      | Labour & Industrial Law                                         |
+| I2DAEFED1006E11DFBEF1C9F02835E615 | Chandra Prakash Shahi v State of Uttar Pradesh and Others                                     | Service                                                         |
+| I31AF5161006E11DFBEF1C9F02835E615 | State of Bihar v Gopi Kishore Prasad                                                          | Labour & Industrial Law                                         |
+|                                   |                                                                                               |                                                                 |
+|                                   |                                                                                               |                                                                 |
+| I0B5FE241006E11DFBEF1C9F02835E615 | Jagdish Mitter v Union Of India                                                               | Constitution,  Service                                          |
+| I0226BD20006E11DFBEF1C9F02835E615 | State of Uttar Pradesh v Ram Chandra Trivedi                                                  | Labour & Industrial Law                                         |
+| I0B600950006E11DFBEF1C9F02835E615 | STATE of ORISSA and ANOTHER v RAM NARAYAN DAS                                                 | Constitution,  Indirect Tax,  Labour & Industrial Law,  Service |
+| I2446DA71006E11DFBEF1C9F02835E615 | State of Punjab and Another v Shri Sukh Raj Bahadur                                           | Indirect Tax,  Labour & Industrial Law,  Service                |
+| I31AF0340006E11DFBEF1C9F02835E615 | Madan Gopal v State of Punjab and Others                                                      | Labour & Industrial Law                                         |
+| I189AE090006E11DFBEF1C9F02835E615 | Regional Manager & Anr. v Pawan Kumar Dubey                                                   | Constitution,  Labour & Industrial Law                          |
+| I2DAEFED1006E11DFBEF1C9F02835E615 | Chandra Prakash Shahi v State of Uttar Pradesh and Others                                     | Service                                                         |
+| I4063A940006E11DFBEF1C9F02835E615 | State of Uttar Pradesh and Others v Sughar Singh                                              | Labour & Industrial Law                                         |
