@@ -6,13 +6,16 @@ The results currently comprise of the following centrality measure rankings:
 
 1. [Graph metadata](#graph-metadata)
 2. [In-Degree centrality](#in-degree-centrality)
-3. [Eigenvector centrality](#eigenvector-centrality)
-4. [Katz centrality](#katz-centrality)
-5. [Closeness centrality](#closeness-centrality)
-6. [Pagerank](#pagerank)
-7. [Inward relevance centrality](#inward-relevance-centrality)
-8. [Outward relevance centrality](#outward-relevance-centrality)
-
+3. [Out-Degree centrality](#out-degree-centrality)
+4. [Eigenvector centrality](#eigenvector-centrality)
+5. [Katz centrality](#katz-centrality)
+6. [Closeness centrality](#closeness-centrality)
+7. [Pagerank](#pagerank)
+8. [Inward relevance centrality](#inward-relevance-centrality)
+9. [Outward relevance centrality](#outward-relevance-centrality)
+10. [Top 5 subjects](#top-5-subjects)
+11. [Weighted-Rank metric](#rank-metric-results)
+12. [Acts distribution](#acts-distribution)
 
 ### Graph metadata
 
@@ -69,6 +72,63 @@ The results currently comprise of the following centrality measure rankings:
 | 28 | I01EBD702006E11DFBEF1C9F02835E615 | E. P. Royappa v State of Tamil Nadu and Another                                              | 0.0021797863195382535 |
 | 29 | I07BC0791006E11DFBEF1C9F02835E615 | Chandrappa & Ors v State Of Karnataka                                                        | 0.0021797863195382535 |
 | 30 | I07AFF9A1006E11DFBEF1C9F02835E615 | Vadivelu Thevar v State of Madras                                                            | 0.002149085103770109  |
+
+### Out-Degree centrality
+
+[(^ Go back to LoC)](#list-of-content)
+
+| S No | Case ID                           | Case Title                                                                                 | Score                 |
+|------|-----------------------------------|--------------------------------------------------------------------------------------------|-----------------------|
+| 1  | I3B9703A0364711E79FDFFC7FDF999C97 | (1) Mukesh and another; (2) Vinay Sharma and another v State for (NCT of Delhi) and others                                                                  | 0.005679724917106717  |
+| 2  | I6F75A17018D911E88259A75E65FBF226 | Indore Development Authority and another v Shailendra (dead), through Lrs. and another                                                                      | 0.003315731302959597  |
+| 3  | IF79F3490EF8E11E7A2F4EB6EBDDF78C7 | Subramanian Swamy v Union of India, Ministry of Law and others                                                                                              | 0.003254328871423308  |
+| 4  | I71429340986A11E29989E9DF31F7E198 | Yakub Abdul Razak Memon v The State Of Maharashtra, Through Cbi , Bombay                                                                                    | 0.002947316713741864  |
+| 5  | I9DBA47C27F7F11E0841AA4A896C541E9 | Narmada Bachao Andolan and others v State of Madhya Pradesh and another                                                                                     | 0.0027631094191329975 |
+| 6  | IFCB6C1A08C7611E0BE0CDF6A6E274E86 | Bombay Dyeing & Mfg. Co. Ltd v Bombay Environmental Action Group & Ors                                                                                      | 0.0026096033402922755 |
+| 7  | ID28417906F5D11E2AFA281C2BF225CA1 | State of Punjab and another v Davinder Pal Singh Bhullar & Ors. Etc.                                                                                        | 0.0026096033402922755 |
+| 8  | I1A2AE910F4D511E6BF1B90C9AEAC1666 | State of Karnataka and another v Selvi J. Jayalalitha and others                                                                                            | 0.0024253960456834087 |
+| 9  | I0807DDA1006E11DFBEF1C9F02835E615 | Official Liquidator v Dayanand And Others                                                                                                                   | 0.002302591182610831  |
+| 10 | I273ADF00AFE511E69940820C4426EDC1 | Yogesh Singh v Mahabeer Singh and others                                                                                                                    | 0.002302591182610831  |
+| 11 | I66B570604FA111DFA05FA7F3AD449A8B | Sidhartha Vashisht @ Manu Sharma v State (Nct Of Delhi)                                                                                                     | 0.0022411887510745423 |
+| 12 | IC015C1E0A97411E5B12D93505FBBE2DA | Yogendra Kumar Jaiswal v State of Bihar and others                                                                                                          | 0.002149085103770109  |
+| 13 | I91C3DDB1DFDB11E19780BEC37A32B169 | Union of India v Ibrahim Uddin and another                                                                                                                  | 0.0021183838880019647 |
+| 14 | I1AD0CD0033AB11DF83CF9281592106AC | Samatha v State of Andhra Pradesh and Others                                                                                                                | 0.0019648778091612426 |
+| 15 | I7C5C8500B61911DF9461BBF68DDF4EB1 | C. Muniappan and another v State of Tamil Nadu                                                                                                              | 0.0019341765933930982 |
+| 16 | I667F2D30076B11DF9E12F8B2A75E322B | State Of Uttaranchal v Balwant Singh Chaufal And Others                                                                                                     | 0.0019034753776249538 |
+| 17 | I87615910CA6011E0AA419F3FB8D83EDB | State Of Tamil Nadu & Ors. v K. Shyam Sunder & Ors.                                                                                                         | 0.0018727741618568094 |
+| 18 | I74E1C520AE8611E2865EB03E956195A9 | Shankar Kisanrao Khade v State of Maharashtra                                                                                                               | 0.0018727741618568094 |
+| 19 | I07B68951006E11DFBEF1C9F02835E615 | State (N.C.T. of Delhi) and Others v Navjot Sandhu @ Afsan Guru and Others                                                                                  | 0.001842072946088665  |
+| 20 | IC45440501DCA11E0A59F906D62E69713 | Automotive Tyre Manufacturers Association v Designated Authority and others                                                                                 | 0.0018113717303205206 |
+| 21 | IFB621200331E11E2A042F36D89A740D1 | (1) General Officer Commanding (2)Additional Director General v Cbi & Anr. …                                                                                | 0.0018113717303205206 |
+| 22 | I2AE352703D6C11E3A1EBCBE3E861D785 | Dr. Balram Prasad and others v Dr. Kunal Saha and another                                                                                                   | 0.0017499692987842318 |
+| 23 | I02F50B223A1611E09ADEF0E6048145D2 | State of Orissa and another v Mamata Mohanty                                                                                                                | 0.0016885668672479428 |
+| 24 | I10DBAFB0631611E39BAAEBEC2506EA51 | Suresh Kumar Koushal and another v NAZ Foundation and others                                                                                                | 0.0016578656514797984 |
+| 25 | I392BAFA0E0DF11E3892DF0AE257B9E7C | Adambhai Sulemanbhai Ajmeri and others v State of Gujarat                                                                                                   | 0.0016578656514797984 |
+| 26 | IFECC306003FD11E299E5C2F489567441 | V. Chandrasekaran & Anr. v The Administrative Officer & Ors.                                                                                                | 0.0015964632199435096 |
+| 27 | I78A350505DA611E38031BF2C85A0EC44 | Union of India and another v Ashok Kumar Aggarwal                                                                                                           | 0.0015964632199435096 |
+| 28 | I8ACD4CE0567C11E28372869DA1A9083E | State Of Gujarat & Anr v Hon'Ble Mr. Justice R.A. Mehta (Retd) & Ors                                                                                        | 0.0015964632199435096 |
+| 29 | IC0B0C44070F411E6A46CFCF8D68C3428 | Kedar Nath Yadav v State of West Bengal and others                                                                                                          | 0.0015657620041753652 |
+| 30 | I6E8CF2502F3111E29E5CD4D66F6B800C | Ayaaubkhan Noorkhan Pathan v State of Maharashtra and others                                                                                                | 0.0015350607884072208 |
+| 31 | IA9C093F08C8811E68694D5C77215448D | Vikas Yadav v State of U. P. and others                                                                                                                     | 0.0015350607884072208 |
+| 32 | I0BA54FB0006E11DFBEF1C9F02835E615 | Ashok Kumar Gupta, Vidya Sagar Gupta and Others v State of Uttar Pradesh and Others                                                                         | 0.0015043595726390764 |
+| 33 | I96F81ED2006E11DF8DDDB6CBBF184CCF | (1) Tika Ram and Others; (2) Saroj Agarwal; (3) v State Of Uttar Pradesh And Others                                                                         | 0.0015043595726390764 |
+| 34 | IEEE12671518411DF92FAC5FC1E5C4A13 | Manish Goel v Rohini Goel                                                                                                                                   | 0.001473658356870932  |
+| 35 | I00D86CB03A1611E09ADEF0E6048145D2 | Ashoka Smokeless Coal Ind. Private Limited and others v Union of India and others                                                                           | 0.0014429571411027876 |
+| 36 | I2496CFA0F2B211E2B64DF9333A6E735D | Christian Medical College Vellore and others v Union of India and others                                                                                    | 0.0014429571411027876 |
+| 37 | I6E532440BCE611E48259A303F722A1A2 | Krishnamoorthy v Sivakumar and others                                                                                                                       | 0.0014429571411027876 |
+| 38 | I0CDA1220DE2111E0B2CEB6BEAF31E206 | National Textile Corporation Limited v Nareshkumar Badrikumar Jagad and others                                                                              | 0.0014122559253346432 |
+| 39 | I853D9EE0E77A11E1B917A85D9E9E31D1 | Monnet Ispat and Energy Limited v Union of India and others                                                                                                 | 0.0014122559253346432 |
+| 40 | I7DB4D5D0006E11DFBEF1C9F02835E615 | Aloke Nath Dutta and Others v State of West Bengal                                                                                                          | 0.0013815547095664988 |
+| 41 | I594AFAA072A211E1B9F1A4D18A85028E | Ravi Yashwant Bhoir v District Collector, Raigad & Ors.                                                                                                     | 0.0013815547095664988 |
+| 42 | IF2BE64A0245911E3A72989A323D3EE48 | Deepak Rai and another v State of Bihar                                                                                                                     | 0.0013815547095664988 |
+| 43 | I18680E20A84111E3965FDCFA6FD777F8 | Sushil Ansal v State Through CBI                                                                                                                            | 0.0013815547095664988 |
+| 44 | I3C9B8662154D11E7BBA5C6E6BE9F3684 | T. Ravi and another v B. Chinna Narasimha and others                                                                                                        | 0.0013815547095664988 |
+| 45 | ID694C5B1661711E08502CD76C17F2B53 | Chairman-Cum-M. D., Coal India Limited And Others v Ananta Saha And Others                                                                                  | 0.0013508534937983544 |
+| 46 | IB4350A0060B811E28FABF2213B337194 | Prithipal Singh Etc v State Of Punjab & Anr. Etc                                                                                                            | 0.0013508534937983544 |
+| 47 | ID949A56079B511E2A3249831AFF21854 | The Rajasthan State Industrial Development And Investment Corporation And Investment Corporation v Subhash Sindhi Cooperative Housing Society Jaipur & Ors. | 0.0013508534937983544 |
+| 48 | IE5D5E980D9BB11E3AA15E241BD530B7B | Chandra Prakash and others v State of Rajasthan                                                                                                             | 0.0013508534937983544 |
+| 49 | I117AD771006E11DFBEF1C9F02835E615 | M. Ahamedkutty v Union of India and Another                                                                                                                 | 0.00132015227803021   |
+| 50 | I2A0C3592006E11DFBEF1C9F02835E615 | Suraj Parkash Gupta and Others Etc v State of Jammu and Kashmir and Others                                                                                  | 0.00132015227803021   |
 
 ### Eigenvector centrality
 
@@ -293,7 +353,10 @@ The results currently comprise of the following centrality measure rankings:
 | 29 | I07BC0791006E11DFBEF1C9F02835E615 | Chandrappa & Ors v State Of Karnataka                           | 0.05044301901019895  |
 | 30 | I023FC360006E11DFBEF1C9F02835E615 | Allauddin Mian and Others v State of Bihar                      | 0.049595346173091866 |
 
-### Top 5 subjects: 
+### Top 5 subjects
+
+[(^ Go back to LoC)](#list-of-content)
+
 1. Practices and Procedures
 2. Criminal
 3. Constitution
@@ -301,6 +364,9 @@ The results currently comprise of the following centrality measure rankings:
 5. Labour and Industrial Law
 
 ### Rank Metric Results
+
+[(^ Go back to LoC)](#list-of-content)
+
 
 | Title                                                                                             | Harmonic mean | Geometric mean | Mean        | Average     |
 |---------------------------------------------------------------------------------------------------|---------------|----------------|-------------|-------------|
@@ -549,3 +615,15 @@ The results currently comprise of the following centrality measure rankings:
 | Ajitsingh Harnamsingh Gujral v State of Maharashtra                                               | 50            | 50             | 50          | 50          |
 | Haresh Mohandas Rajput v State of Maharashtra                                                     | 50            | 50             | 50          | 50          |
 | Samant N. Balkrishna and Another v George Fernandez and Others                                    | 49.49494949   | 49.49747468    | 49.5        | 49.5        |
+
+### Acts distribution
+
+[(^ Go back to LoC)](#list-of-content)
+
+Total number of distinct acts: 55279
+
+1. 'Constitution of India, 1950': 14079
+2. 'Indian Penal Code, 1860': 8432
+3. 'Code of Criminal Procedure, 1973': 5634
+4. 'Code of Civil Procedure, 1908': 4810
+5. 'Indian Penal Code, 1860 s. 302': 2618
