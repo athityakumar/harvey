@@ -4,14 +4,18 @@ from models.case import Case
 from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 import numpy as np
+import math
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
-def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200):
+def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200, plot_type="bar"):
     degree = [d for (d, c) in distribution]
     count = [c for (d, c) in distribution]
 
     fig, ax = plt.subplots()
-    plt.bar(degree, count, width=0.80, color='b')
+    if plot_type == "bar":
+        plt.bar(degree, count, width=0.80, color='b')
+    elif plot_type == "line":
+        plt.plot(degree, count, linewidth=0.80, color='b')
 
     plt.title("{} Histogram".format(title))
     plt.ylabel("Count")
@@ -104,3 +108,10 @@ def print_common_cases():
     print("case_id", ";\t", "Title", ";\t", "Harmonic mean", ";\t", "Geometric mean", ";\t", "Mean", ";\t", "Average")
     for case_id, rank in case_rank_cumulative:
         print(case_id, ";\t", CASE_ID_TO_NAME_MAPPING[case_id], ";\t", stats.hmean(rank), ";\t", stats.gmean(rank), ";\t", np.mean(rank), ";\t", np.average(rank))
+
+def fetch_log_scale(distribution):
+    log_distribution = []
+    for (d,c) in distribution:
+        log_c = math.log(c)
+        log_distribution.append((d, log_c))
+    return(log_distribution)

@@ -23,5 +23,6 @@ print_landmark_cases(nx.closeness_centrality, G, 'Closeness centrality')
 print_landmark_cases(nx.pagerank, G, 'Pagerank')
 print_landmark_cases(custom_centrality, G, 'Custom centrality')
 print_common_cases()
-# plot_distribution(G.in_degree_distribution(), 'In-Degree', 'graph_plots/power_law_distribution/in_degree.png', fontSize=2, dpi=500)
-# plot_distribution(G.out_degree_distribution(), 'Out-Degree', 'graph_plots/power_law_distribution/out_degree.png', fontSize=2, dpi=500)
+
+# plot_distribution(fetch_log_scale(G.in_degree_distribution()), 'In-Degree', 'graph_plots/power_law_distribution/in_degree.png', fontSize=2, dpi=500, plot_type="line")
+# plot_distribution(fetch_log_scale(G.out_degree_distribution()), 'Out-Degree', 'graph_plots/power_law_distribution/out_degree.png', fontSize=2, dpi=500, plot_type="line")
