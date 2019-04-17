@@ -4,12 +4,9 @@ from models.case import Case
 from models.legal_knowledge_graph import LegalKnowledgeGraph
 from globals import *
 import numpy as np
-<<<<<<< HEAD
 import math
-=======
 from scipy import stats
 from bs4 import BeautifulSoup
->>>>>>> f4bf764a0f8c565980dd4f8197b69167c87d43e1
 
 # TODO: complete this for tuple input (taken from out_degree_distibution()
 def plot_distribution(distribution, title="Default value", filename=None, fontSize=5, dpi=200, plot_type="bar"):
@@ -21,6 +18,8 @@ def plot_distribution(distribution, title="Default value", filename=None, fontSi
         plt.bar(degree, count, width=0.80, color='b')
     elif plot_type == "line":
         plt.plot(degree, count, linewidth=0.80, color='b')
+    elif plot_type == "scatter":
+        plt.scatter(degree, count, s=10.0, color='b')        
 
     plt.title("{} Histogram".format(title))
     plt.ylabel("Count")
@@ -129,8 +128,9 @@ def print_common_cases():
 def fetch_log_scale(distribution):
     log_distribution = []
     for (d,c) in distribution:
-        log_c = math.log(c)
-        log_distribution.append((d, log_c))
+        log_c = math.log(c) if c else c
+        log_d = math.log(d) if d else d
+        log_distribution.append((log_d, log_c))
     return(log_distribution)
 
 def find_subjects_for_case(file):
